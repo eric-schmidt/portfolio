@@ -4,9 +4,6 @@ const Home = () => {
   return (
     <main>
       <div className="relative h-screen w-screen overflow-hidden fade-in">
-        <h1 className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10 p-4 bg-black text-yellow text-center text-xl md:text-3xl">
-          full portfolio coming soon!
-        </h1>
         <Image
           alt="Black and white image of Denver, Colorado skyline."
           className="object-cover"

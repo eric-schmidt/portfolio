@@ -55,6 +55,7 @@ const Teaser = ({
     >
       <Image
         alt="boss the cat"
+        blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII="
         className="object-cover group-focus:grayscale duration-500 ease-in-out z-10"
         src={src}
         fill

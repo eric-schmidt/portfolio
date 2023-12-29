@@ -6,7 +6,7 @@ const nunitoSans = Nunito_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Eric Schmidt | Web Engineer",
-  description: "The online portfolio of Eric Schmidt.",
+  description: "The online portfolio of Eric Schmidt",
 };
 
 export default function RootLayout({

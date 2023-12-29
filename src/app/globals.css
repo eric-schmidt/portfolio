@@ -26,6 +26,17 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+@layer base {
+  h1,
+  h2 {
+    @apply font-semibold mb-8 text-7xl;
+  }
+
+  p {
+    @apply text-lg mb-5;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -43,4 +54,24 @@ body {
   animation: fadeIn 2s forwards;
   animation-delay: 1s;
   opacity: 0;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-6px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-3px);
+  }
+}
+
+.bounce {
+  animation: bounce 2s infinite ease-in-out;
 }

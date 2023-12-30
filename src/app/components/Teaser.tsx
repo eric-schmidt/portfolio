@@ -18,26 +18,28 @@ const Teaser = ({
 
   const [focused, setFocused] = useState(false);
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    // Early return if this click was done via keyboard (hacky 🙃).
-    if (e.clientX === 0 && e.clientY === 0) {
-      e.currentTarget.blur();
-      return;
-    }
+  const handleClick =
+    (href: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
+      // Early return if this click was done via keyboard,
+      // as no additional logic is required (it's hacky 🤷‍♂️).
+      if (e.clientX === 0 && e.clientY === 0) {
+        e.currentTarget.blur();
+        return;
+      }
 
-    // Prevent default behavior of click.
-    e.preventDefault();
+      // Prevent default behavior of click.
+      e.preventDefault();
 
-    // If the element is already focused and the overlay is visible,
-    // navigate to the link destination, otherwise display the overlay.
-    if (focused) {
-      e.currentTarget.blur();
-      setFocused(false);
-      router.push("/");
-    } else {
-      setFocused(true);
-    }
-  };
+      // If the element is already focused and the overlay is visible,
+      // navigate to the link destination, otherwise display the overlay.
+      if (focused) {
+        e.currentTarget.blur();
+        setFocused(false);
+        router.push(href);
+      } else {
+        setFocused(true);
+      }
+    };
 
   // Remove the focused state when an element is no longer focused,
   // otherwise it will navigate immediately when re-clicking on an
@@ -48,21 +50,30 @@ const Teaser = ({
 
   return (
     <Link
-      className="group block relative overflow-hidden min-h-80 rounded-sm z-0"
+      className="group relative overflow-hidden rounded-sm pointer-cursor border-2 border-black transition-all hover:shadow-[0_0_40px_10px_rgba(255,228,0,0.25)] hover:border-yellow duration-500 ease-in-out"
       href={href}
-      onClick={handleClick}
+      onClick={handleClick(href)}
       onBlur={handleBlur}
     >
-      <Image
-        alt="boss the cat"
-        blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII="
-        className="object-cover group-focus:grayscale duration-500 ease-in-out z-10"
-        src={src}
-        fill
-      />
-      <div className="relative w-full h-full bg-black bg-opacity-85 transition-transform translate-x-full group-focus:translate-x-0 duration-500 ease-in-out z-20">
-        <h3 className="p-12 text-4xl">{title}</h3>
-        {/* TODO: Add arrow here!!! */}
+      <div className="relative h-0 pt-[65%]">
+        {/* TODO: blueDataURL doesn't alleviate the pop in on fresh load... */}
+        <Image
+          alt="boss the cat"
+          blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII="
+          className="object-cover group-focus:grayscale duration-500 ease-in-out"
+          src={src}
+          fill
+        />
+        <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-85 transition-transform -translate-x-full group-focus:translate-x-0 duration-500 ease-in-out">
+          <h3 className="p-12 text-3xl">{title}</h3>
+          <Image
+            alt="Right arrow indicating a user should click to proceed to a new page."
+            className="absolute bottom-4 right-4"
+            src="/images/right-arrow.svg"
+            width={25}
+            height={25}
+          />
+        </div>
       </div>
     </Link>
   );

@@ -35,7 +35,7 @@ const Home = () => {
       <div className="relative z-20 bg-yellow text-black">
         <div className="container mx-auto px-12 flex flex-col xl:flex-row justify-between">
           <div className="xl:basis-1/2 pt-24 xl:pb-24">
-            <h1>Hi there 👋</h1>
+            <h1 className="text-white -rotate-3">Hi there 👋</h1>
             <p>
               My name is Eric Schmidt, and I'm a Web Engineer based out of
               Denver, Colorado. I've been working with the web for well over 15
@@ -97,9 +97,9 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="relative container mx-auto px-12 py-24">
-        <h2 className="text-yellow text-center">Selected works</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16">
+      <div className="relative container mx-auto px-12 py-24 text-center">
+        <h2 className="mb-12 text-yellow rotate-2">Selected works</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 md:gap-16 text-left">
           <Teaser title="test" href="/" src="/images/boss.jpg" />
           <Teaser title="test" href="/" src="/images/boss.jpg" />
           <Teaser title="test" href="/" src="/images/boss.jpg" />

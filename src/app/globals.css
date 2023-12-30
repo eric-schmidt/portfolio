@@ -29,7 +29,7 @@ body {
 @layer base {
   h1,
   h2 {
-    @apply font-semibold mb-8 text-7xl;
+    @apply inline-block p-4 font-semibold mb-8 text-7xl bg-black;
   }
 
   p {

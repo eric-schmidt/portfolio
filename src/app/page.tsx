@@ -5,6 +5,7 @@ import Teaser from "./components/Teaser";
 const Home = () => {
   return (
     <main>
+      {/* TODO: Add header with icons for LinkedIn and GitHub */}
       <div className="fixed top-0 left-0 h-screen w-screen overflow-hidden z-0 fade-in">
         <Image
           alt="Black and white image of Denver, Colorado skyline."
@@ -88,6 +89,7 @@ const Home = () => {
               />
             </p>
           </div>
+          {/* TODO: Thought bubble or something to fill the space above my head?!?!?! */}
           <Image
             alt="Black and white headshot of Eric Schmidt."
             className="xl:basis-2/5 h-fit self-center xl:self-end"

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import RolloverLink from "./components/RolloverLink";
 import Teaser from "./components/Teaser";
 
 const Home = () => {
@@ -69,13 +70,11 @@ const Home = () => {
               lookout for new things to build. Below you will find a small
               selection of works that I think best showcase my skills, but this
               is by no means exhaustive. Take a peek, and don't hesitate to{" "}
-              <a
-                className="underline underline-offset-4"
+              <RolloverLink
+                text="drop me a line"
                 href="https://www.linkedin.com/in/eric-schmidt/"
                 target="_blank"
-              >
-                drop me a line
-              </a>{" "}
+              />{" "}
               if you would like to learn more. Thanks for stopping by!
             </p>
             <p>

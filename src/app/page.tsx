@@ -5,8 +5,7 @@ import Teaser from "./components/Teaser";
 const Home = () => {
   return (
     <>
-      {/* TODO: Add header with icons for LinkedIn and GitHub */}
-      <div className="relative h-screen w-screen fade-in-delayed">
+      <div className="relative h-screen w-screen fade-in-delayed -mt-24">
         <Image
           alt="Logo graphic for Eric Schmidt (a stylized 'E' and 'S')."
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"

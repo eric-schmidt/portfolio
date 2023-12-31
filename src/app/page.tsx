@@ -4,18 +4,9 @@ import Teaser from "./components/Teaser";
 
 const Home = () => {
   return (
-    <main>
+    <>
       {/* TODO: Add header with icons for LinkedIn and GitHub */}
-      <div className="fixed top-0 left-0 h-screen w-screen overflow-hidden z-0 fade-in">
-        <Image
-          alt="Black and white image of Denver, Colorado skyline."
-          className="object-cover"
-          fill
-          src="/images/denver-skyline.png"
-        />
-      </div>
-
-      <div className="h-screen w-screen z-10 fade-in-delayed">
+      <div className="relative h-screen w-screen fade-in-delayed">
         <Image
           alt="Logo graphic for Eric Schmidt (a stylized 'E' and 'S')."
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
@@ -23,17 +14,17 @@ const Home = () => {
           width={1565}
           height={889}
         />
+
+        <Image
+          alt="Down arrow indicating a user should scroll."
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bounce"
+          src="/images/down-arrow.svg"
+          width={50}
+          height={50}
+        />
       </div>
 
-      <Image
-        alt="Down arrow indicating a user should scroll."
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bounce"
-        src="/images/down-arrow.svg"
-        width={50}
-        height={50}
-      />
-
-      <div className="relative z-20 bg-yellow text-black">
+      <div className="bg-yellow text-black">
         <div className="container mx-auto px-12 flex flex-col xl:flex-row justify-between">
           <div className="xl:basis-1/2 pt-24 xl:pb-24">
             <h1 className="text-white -rotate-3">Hi there 👋</h1>

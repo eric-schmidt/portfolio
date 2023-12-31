@@ -52,7 +52,7 @@ const Teaser = ({
 
   return (
     <Link
-      className="group relative overflow-hidden rounded-sm pointer-cursor border-2 border-black transition-all hover:shadow-[0_0_40px_10px_rgba(255,228,0,0.25)] hover:border-yellow duration-500 ease-in-out"
+      className="group relative overflow-hidden rounded-sm pointer-cursor border-2 border-black transition-all hover:shadow-[0_0_40px_10px_rgba(255,228,0,0.25)] hover:border-yellow duration-500 ease-in-out cursor-pointer"
       href={href}
       onClick={handleClick(href)}
       onBlur={handleBlur}

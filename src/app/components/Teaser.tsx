@@ -7,10 +7,12 @@ import { useState } from "react";
 
 const Teaser = ({
   title,
+  description,
   href,
   src,
 }: {
   title: string;
+  description: string;
   href: string;
   src: string;
 }) => {
@@ -64,8 +66,9 @@ const Teaser = ({
           src={src}
           fill
         />
-        <div className="absolute top-0 right-0 bottom-0 left-0 bg-black bg-opacity-85 transition-transform -translate-x-full group-focus:translate-x-0 duration-500 ease-in-out">
-          <h3 className="p-12 text-3xl">{title}</h3>
+        <div className="absolute top-0 right-0 bottom-0 left-0 p-12 bg-black bg-opacity-85 transition-transform -translate-x-full group-focus:translate-x-0 duration-500 ease-in-out">
+          <h3 className="text-3xl">{title}</h3>
+          <p>{description}</p>
           <Image
             alt="Right arrow indicating a user should click to proceed to a new page."
             className="absolute bottom-4 right-4"

@@ -99,15 +99,30 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="relative container mx-auto px-12 py-24 text-center">
+      <div className="container mx-auto px-12 py-24 text-center">
         <h2 className="mb-12 text-yellow rotate-2">Selected works</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24 md:gap-16 text-left">
-          <Teaser title="test" href="/" src="/images/boss.jpg" />
-          <Teaser title="test" href="/" src="/images/boss.jpg" />
-          <Teaser title="test" href="/" src="/images/boss.jpg" />
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-24 md:gap-16 text-left">
+          <Teaser
+            title="test"
+            description="Impedit corporis et dolor sit."
+            href="/projects/honor-health-map"
+            src="/images/boss.jpg"
+          />
+          <Teaser
+            title="test"
+            description="Impedit corporis et dolor sit."
+            href="/projects/honor-health-map"
+            src="/images/boss.jpg"
+          />
+          <Teaser
+            title="test"
+            description="Impedit corporis et dolor sit."
+            href="/projects/honor-health-map"
+            src="/images/boss.jpg"
+          />
         </div>
       </div>
-    </main>
+    </>
   );
 };
 

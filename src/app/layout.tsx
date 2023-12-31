@@ -18,6 +18,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunitoSans.className}>
+        <header className="absolute top-0 left-1/2 -translate-x-1/2 flex z-10 p-6 fade-in-delayed">
+          <a href="https://github.com/eric-schmidt" target="_blank">
+            <Image
+              alt="GitHub logo"
+              className="mr-4"
+              src="/images/github.svg"
+              height={25}
+              width={25}
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/eric-schmidt/" target="_blank">
+            <Image
+              alt="LinkedIn logo"
+              src="/images/linkedin.svg"
+              height={25}
+              width={25}
+            />
+          </a>
+        </header>
         <div className="fixed top-0 left-0 h-screen w-screen overflow-hidden -z-0 fade-in">
           <Image
             alt="Black and white image of Denver, Colorado skyline."

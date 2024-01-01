@@ -90,7 +90,7 @@ const Home = () => {
         </div>
       </div>
       <div className="container mx-auto px-12 py-24 text-center">
-        <h2 className="mb-12 text-yellow rotate-2">Selected works</h2>
+        <h2 className="mb-12 text-white rotate-2">Selected works</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-24 md:gap-16 text-left">
           <Teaser
             title="test"

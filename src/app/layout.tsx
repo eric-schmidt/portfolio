@@ -47,7 +47,7 @@ export default function RootLayout({
         </div>
         <main className="relative">{children}</main>
         <footer className="relative text-xs text-white bg-black bg-opacity-75 p-6 text-center">
-          &#169; {new Date().getFullYear()} Eric Schmidt ✌️
+          &#169; 2023 - {new Date().getFullYear()} Eric Schmidt ✌️
         </footer>
       </body>
     </html>

@@ -95,19 +95,19 @@ const Home = () => {
           <Teaser
             title="test"
             description="Impedit corporis et dolor sit."
-            href="/projects/honor-health-map"
+            href="/projects/honor-health-location-search"
             src="/images/boss.jpg"
           />
           <Teaser
             title="test"
             description="Impedit corporis et dolor sit."
-            href="/projects/honor-health-map"
+            href="/projects/honor-health-location-search"
             src="/images/boss.jpg"
           />
           <Teaser
             title="test"
             description="Impedit corporis et dolor sit."
-            href="/projects/honor-health-map"
+            href="/projects/honor-health-location-search"
             src="/images/boss.jpg"
           />
         </div>

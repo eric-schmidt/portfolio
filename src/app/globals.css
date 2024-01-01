@@ -35,6 +35,10 @@ body {
   p {
     @apply text-lg mb-5;
   }
+
+  p:last-child {
+    @apply mb-0;
+  }
 }
 
 @keyframes fadeIn {

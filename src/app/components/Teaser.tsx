@@ -57,7 +57,7 @@ const Teaser = ({
       onClick={handleClick(href)}
       onBlur={handleBlur}
     >
-      <div className="relative h-0 pt-[65%]">
+      <div className="relative aspect-video">
         {/* TODO: blueDataURL doesn't alleviate the pop in on fresh load... */}
         <Image
           alt="boss the cat"

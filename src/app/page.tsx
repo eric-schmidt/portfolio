@@ -5,7 +5,7 @@ import Teaser from "./components/Teaser";
 const Home = () => {
   return (
     <>
-      <div className="relative h-screen w-screen fade-in-delayed -mt-24">
+      <div className="relative h-screen w-screen fade-in-delayed -mt-20">
         <Image
           alt="Logo graphic for Eric Schmidt (a stylized 'E' and 'S')."
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
@@ -62,10 +62,11 @@ const Home = () => {
               selection of works that I think best showcase my skills, but this
               is by no means exhaustive. Take a peek, and don't hesitate to{" "}
               <RolloverLink
-                text="drop me a line"
                 href="https://www.linkedin.com/in/eric-schmidt/"
                 target="_blank"
-              />{" "}
+              >
+                drop me a line
+              </RolloverLink>{" "}
               if you would like to learn more. Thanks for stopping by!
             </p>
             <p>
@@ -91,24 +92,18 @@ const Home = () => {
       </div>
       <div className="container mx-auto px-12 py-24 text-center">
         <h2 className="mb-12 text-white rotate-2">Selected works</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-24 md:gap-16 text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 md:gap-16 text-left">
           <Teaser
-            title="test"
-            description="Impedit corporis et dolor sit."
+            title="Honor Health Location Search"
+            description="A Vue-based map for finding specific health providers."
             href="/projects/honor-health-location-search"
-            src="/images/boss.jpg"
+            src="/images/honor-health-location-search.png"
           />
           <Teaser
-            title="test"
-            description="Impedit corporis et dolor sit."
-            href="/projects/honor-health-location-search"
-            src="/images/boss.jpg"
-          />
-          <Teaser
-            title="test"
-            description="Impedit corporis et dolor sit."
-            href="/projects/honor-health-location-search"
-            src="/images/boss.jpg"
+            title="Contentful Required Tags App"
+            description="A custom app built using React and Contentful's App Framework."
+            href="/projects/contentful-required-tags-app"
+            src="/images/contentful-required-tags-app.png"
           />
         </div>
       </div>

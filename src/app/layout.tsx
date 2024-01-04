@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${nunitoSans.className} pt-24`}>
+      <body className={`${nunitoSans.className} pt-12 md:pt-20`}>
         <header className="absolute top-0 left-1/2 -translate-x-1/2 flex z-10 p-12 fade-in-delayed">
           <a href="https://github.com/eric-schmidt" target="_blank">
             <Image

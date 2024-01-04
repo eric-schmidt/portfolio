@@ -83,7 +83,7 @@ const Home = () => {
           {/* TODO: Thought bubble or something to fill the space above my head?!?!?! */}
           <Image
             alt="Black and white headshot of Eric Schmidt."
-            className="xl:basis-2/5 h-fit self-center xl:self-end"
+            className="xl:basis-2/5 h-fit self-center xl:self-end mt-12"
             src="/images/bw-profile-bg-removed.png"
             width={526}
             height={473}

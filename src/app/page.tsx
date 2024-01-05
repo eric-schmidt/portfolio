@@ -92,12 +92,18 @@ const Home = () => {
       </div>
       <div className="container mx-auto px-12 py-24 text-center">
         <h2 className="mb-12 text-white rotate-2">Selected works</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-12 md:gap-16 text-left">
           <Teaser
             title="Honor Health Location Search"
             description="A Vue-based map for finding specific health providers."
             href="/projects/honor-health-location-search"
             src="/images/honor-health-location-search.png"
+          />
+          <Teaser
+            title="Art Institute of Chicago Migration"
+            description="A proof of concept for migrating data into Contentful."
+            href="/projects/art-institute-of-chicago-migration"
+            src="/images/art-institute-of-chicago-migration.png"
           />
           <Teaser
             title="Contentful Required Tags App"

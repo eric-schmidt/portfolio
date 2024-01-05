@@ -17,7 +17,7 @@ const Teaser = ({
       className="group relative overflow-hidden rounded-sm pointer-cursor border-2 border-black transition-all hover:shadow-[0_0_40px_10px_rgba(255,228,0,0.25)] hover:border-yellow focus:shadow-[0_0_40px_10px_rgba(255,228,0,0.25)] focus:border-yellow duration-500 ease-in-out cursor-pointer"
       href={href}
     >
-      <div className="relative aspect-video">
+      <div className="relative aspect-video md:aspect-[14/9]">
         {/* TODO: blueDataURL doesn't alleviate the pop in on fresh load... */}
         <Image
           alt="boss the cat"
@@ -26,7 +26,7 @@ const Teaser = ({
           src={src}
           fill
         />
-        <div className="absolute top-0 right-0 bottom-0 left-0 p-6 md:p-12 bg-black bg-opacity-90 transition-all group-hover:bg-yellow group-hover:bg-opacity-100 group-hover:text-black group-focus:bg-yellow group-focus:bg-opacity-100 group-focus:text-black duration-500 ease-in-out">
+        <div className="absolute top-0 right-0 bottom-0 left-0 p-6 md:p-12 bg-black bg-opacity-75 transition-all group-hover:bg-yellow group-hover:bg-opacity-100 group-hover:text-black group-focus:bg-yellow group-focus:bg-opacity-100 group-focus:text-black duration-500 ease-in-out">
           <h3 className="mb-4 text-2xl md:text-3xl leading-tight">{title}</h3>
           <p className="leading-tight text-sm md:text-lg">{description}</p>
           <Image

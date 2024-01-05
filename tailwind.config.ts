@@ -13,6 +13,9 @@ const config: Config = {
       yellow: "#ffe400",
     },
     extend: {
+      aspectRatio: {
+        "14/9": "14 / 9",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

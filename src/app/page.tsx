@@ -1,11 +1,11 @@
 import Image from "next/image";
-import RolloverLink from "./components/RolloverLink";
-import Teaser from "./components/Teaser";
+import RolloverLink from "@/app/components/RolloverLink";
+import TeaserGrid from "@/app/components/TeaserGrid";
 
-const Home = () => {
+const Home = async () => {
   return (
     <>
-      <div className="relative h-screen w-screen fade-in-delayed -mt-20">
+      <div className="relative h-screen w-screen -mt-20">
         <Image
           alt="Logo graphic for Eric Schmidt (a stylized 'E' and 'S')."
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
@@ -90,29 +90,8 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="container mx-auto px-12 py-24 text-center">
-        <h2 className="mb-12 text-white rotate-2">Selected works</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-12 md:gap-16 text-left">
-          <Teaser
-            title="Honor Health Location Search"
-            description="A Vue-based map for finding specific health providers."
-            href="/projects/honor-health-location-search"
-            src="/images/honor-health-location-search.png"
-          />
-          <Teaser
-            title="Art Institute of Chicago Migration"
-            description="A proof of concept for migrating data into Contentful."
-            href="/projects/art-institute-of-chicago-migration"
-            src="/images/art-institute-of-chicago-migration.png"
-          />
-          <Teaser
-            title="Contentful Required Tags App"
-            description="A custom app built using React and Contentful's App Framework."
-            href="/projects/contentful-required-tags-app"
-            src="/images/contentful-required-tags-app.png"
-          />
-        </div>
-      </div>
+
+      <TeaserGrid />
     </>
   );
 };

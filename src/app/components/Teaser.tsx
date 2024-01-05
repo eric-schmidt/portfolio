@@ -18,14 +18,9 @@ const Teaser = ({
       href={href}
     >
       <div className="relative aspect-video md:aspect-[14/9]">
-        {/* TODO: blueDataURL doesn't alleviate the pop in on fresh load... */}
-        <Image
-          alt="boss the cat"
-          blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII="
-          className="object-cover duration-500 ease-in-out"
-          src={src}
-          fill
-        />
+        {/* TODO: Add blueDataURL to alleviate pop-in? */}
+        {/* TODO: Add sizes attribute. */}
+        <Image alt="boss the cat" className="object-cover" src={src} fill />
         <div className="absolute top-0 right-0 bottom-0 left-0 p-6 md:p-12 bg-black bg-opacity-75 transition-all group-hover:bg-yellow group-hover:bg-opacity-100 group-hover:text-black group-focus:bg-yellow group-focus:bg-opacity-100 group-focus:text-black duration-500 ease-in-out">
           <h3 className="mb-4 text-2xl md:text-3xl leading-tight">{title}</h3>
           <p className="leading-tight text-sm md:text-lg">{description}</p>

@@ -41,25 +41,6 @@ body {
   }
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.fade-in {
-  animation: fadeIn 3s forwards;
-}
-
-.fade-in-delayed {
-  animation: fadeIn 2s forwards;
-  animation-delay: 1s;
-  opacity: 0;
-}
-
 @keyframes bounce {
   0%,
   20%,

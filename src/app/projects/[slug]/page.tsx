@@ -46,9 +46,10 @@ const Project = async ({ params }: { params: { slug: string } }) => {
                   className="object-cover"
                   fill
                   loader={imageLoader}
+                  placeholder="blur"
+                  blurDataURL={`https:${fields.image.fields.image.fields.file.url}?h=10&w=10`}
                   priority={true} // prevent Largest Contentful Paint issues
-                  // TODO: Add proper sizes attribute
-                  // sizes="(min-width: 1280px) 1024px, (min-width: 780px) calc(90.83vw - 121px), calc(100vw - 96px)"
+                  sizes="(min-width: 1280px) 1280px, (min-width: 1040px) 1024px, (min-width: 780px) 768px, (min-width: 680px) 640px, calc(94.44vw + 17px)"
                   src={`https:${fields.image.fields.image.fields.file.url}`}
                 />
               </div>

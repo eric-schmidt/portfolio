@@ -9,6 +9,8 @@ const Home = async () => {
         <Image
           alt="Logo graphic for Eric Schmidt (a stylized 'E' and 'S')."
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          priority={true}
+          sizes="(min-width: 1660px) 1565px, calc(94.4vw + 17px)"
           src="/images/logo.png"
           width={1565}
           height={889}

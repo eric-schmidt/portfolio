@@ -42,6 +42,7 @@ export default function RootLayout({
             alt="Black and white image of Denver, Colorado skyline."
             className="object-cover"
             fill
+            sizes="100vw"
             src="/images/denver-skyline.png"
           />
         </div>
